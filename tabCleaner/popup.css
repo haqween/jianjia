@@ -1,0 +1,74 @@
+.popup-container {
+  width: 800px;
+  height: 500px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* 重置input元素的默认样式 */
+input[type="text"] {
+  appearance: none; /* 移除默认的外观 */
+  border: none; /* 移除边框 */
+  outline: none; /* 移除轮廓线 */
+  background: transparent; /* 背景透明 */
+  font-size: 16px; /* 字体大小 */
+  color: #333; /* 字体颜色 */
+  padding: 10px 5px 0px;
+  width: 80%;
+  transition: border-bottom-color 0.3s; /* 边框底部颜色的渐变效果 */
+}
+
+/* 为输入框添加占位符样式 */
+input::placeholder {
+  color: #aaa; /* 占位符文本颜色 */
+  opacity: 1; /* 有些浏览器需要这个 */
+}
+
+/* 当输入框获得焦点时，改变占位符颜色 */
+input:focus::placeholder {
+  color: #ccc;
+}
+
+.divider {
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.styled-list {
+  list-style: none; /* 移除默认的列表符号 */
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* 隐藏溢出内容 */
+}
+
+.styled-list li {
+  font-size: 10px; /* 字体大小 */
+  color: #333; /* 字体颜色 */
+  transition: background-color 0.3s ease; /* 平滑的背景颜色过渡效果 */
+  padding: 10px 5px;
+}
+
+.styled-list li:last-child {
+  border-bottom: none; /* 最后一个列表项不显示底部边框 */
+}
+
+.styled-list li:hover {
+  background-color: #f0f0f0; /* 鼠标悬浮时的背景颜色 */
+}
+
+.styled-list li:active {
+  background-color: #d9d9d9; /* 鼠标点击时的背景颜色 */
+}
+
+.styled-list li img {
+  vertical-align: middle; /* 垂直居中对齐 */
+  width:20px;
+  height:20px;
+  margin: 0px 5px 0px 0px;
+}
+
